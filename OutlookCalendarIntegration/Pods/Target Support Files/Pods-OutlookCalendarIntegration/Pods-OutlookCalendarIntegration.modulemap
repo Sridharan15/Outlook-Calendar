@@ -1,0 +1,6 @@
+framework module Pods_OutlookCalendarIntegration {
+  umbrella header "Pods-OutlookCalendarIntegration-umbrella.h"
+
+  export *
+  module * { export * }
+}
