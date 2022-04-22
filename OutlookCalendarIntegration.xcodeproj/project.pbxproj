@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07157060270E03D700DCC9BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715705F270E03D700DCC9BA /* AppDelegate.swift */; };
+		07157062270E03D700DCC9BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07157061270E03D700DCC9BA /* SceneDelegate.swift */; };
+		07157064270E03D700DCC9BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07157063270E03D700DCC9BA /* LoginViewController.swift */; };
+		07157067270E03D700DCC9BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07157065270E03D700DCC9BA /* Main.storyboard */; };
+		07157069270E03DA00DCC9BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07157068270E03DA00DCC9BA /* Assets.xcassets */; };
+		0715706C270E03DA00DCC9BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0715706A270E03DA00DCC9BA /* LaunchScreen.storyboard */; };
+		0715707C270E157400DCC9BA /* MSAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715707B270E157400DCC9BA /* MSAuthenticationManager.swift */; };
+		074037502710817300BF44BD /* AuthSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0740374F2710817300BF44BD /* AuthSettings.plist */; };
+		074037532710A89700BF44BD /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074037522710A89700BF44BD /* CalendarViewController.swift */; };
+		07D9820F271C126400719E64 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D9820E271C126400719E64 /* DatePicker.swift */; };
+		07EBAA782711DDF9008D2D68 /* CalendarEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EBAA772711DDF9008D2D68 /* CalendarEventsTableViewCell.swift */; };
+		07EBAA7B2711E081008D2D68 /* AddNewEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EBAA7A2711E081008D2D68 /* AddNewEventsViewController.swift */; };
+		07EBAA7E2711E6B1008D2D68 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EBAA7D2711E6B1008D2D68 /* CalendarViewModel.swift */; };
+		07EBAA8127120765008D2D68 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EBAA8027120765008D2D68 /* CalendarModel.swift */; };
+		24085F061B66D5BED0E28B62 /* Pods_OutlookCalendarIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8569830B6F5D448989769019 /* Pods_OutlookCalendarIntegration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0715705C270E03D700DCC9BA /* OutlookCalendarIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutlookCalendarIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0715705F270E03D700DCC9BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07157061270E03D700DCC9BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		07157063270E03D700DCC9BA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		07157066270E03D700DCC9BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07157068270E03DA00DCC9BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0715706B270E03DA00DCC9BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0715706D270E03DA00DCC9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0715707B270E157400DCC9BA /* MSAuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAuthenticationManager.swift; sourceTree = "<group>"; };
+		0740374F2710817300BF44BD /* AuthSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AuthSettings.plist; sourceTree = "<group>"; };
+		074037522710A89700BF44BD /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		074037552710BE5200BF44BD /* OutlookCalendarIntegration.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OutlookCalendarIntegration.entitlements; sourceTree = "<group>"; };
+		07D9820E271C126400719E64 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		07EBAA772711DDF9008D2D68 /* CalendarEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventsTableViewCell.swift; sourceTree = "<group>"; };
+		07EBAA7A2711E081008D2D68 /* AddNewEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEventsViewController.swift; sourceTree = "<group>"; };
+		07EBAA7D2711E6B1008D2D68 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		07EBAA8027120765008D2D68 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
+		0BED8E8569CC89A2417EF7D2 /* Pods-OutlookCalendarIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutlookCalendarIntegration.release.xcconfig"; path = "Target Support Files/Pods-OutlookCalendarIntegration/Pods-OutlookCalendarIntegration.release.xcconfig"; sourceTree = "<group>"; };
+		519B4193F82DDD100AFF14A8 /* Pods-OutlookCalendarIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutlookCalendarIntegration.debug.xcconfig"; path = "Target Support Files/Pods-OutlookCalendarIntegration/Pods-OutlookCalendarIntegration.debug.xcconfig"; sourceTree = "<group>"; };
+		8569830B6F5D448989769019 /* Pods_OutlookCalendarIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OutlookCalendarIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07157059270E03D700DCC9BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24085F061B66D5BED0E28B62 /* Pods_OutlookCalendarIntegration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0702D2342721B5D3002AF61B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				0715707B270E157400DCC9BA /* MSAuthenticationManager.swift */,
+				0740374F2710817300BF44BD /* AuthSettings.plist */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		0702D2362721B5E4002AF61B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				07157063270E03D700DCC9BA /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0702D2372721B61E002AF61B /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				0702D2392721B669002AF61B /* Views */,
+				0702D23B2721B676002AF61B /* ViewModel */,
+				0702D23E2721B681002AF61B /* Model */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		0702D2392721B669002AF61B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				074037522710A89700BF44BD /* CalendarViewController.swift */,
+				0702D2432721B6B8002AF61B /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0702D23B2721B676002AF61B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				07EBAA7D2711E6B1008D2D68 /* CalendarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0702D23E2721B681002AF61B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07EBAA8027120765008D2D68 /* CalendarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0702D2412721B6A0002AF61B /* AddNewEvents */ = {
+			isa = PBXGroup;
+			children = (
+				07EBAA7A2711E081008D2D68 /* AddNewEventsViewController.swift */,
+			);
+			path = AddNewEvents;
+			sourceTree = "<group>";
+		};
+		0702D2432721B6B8002AF61B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				07EBAA772711DDF9008D2D68 /* CalendarEventsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0702D2452721B6CC002AF61B /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				07D9820E271C126400719E64 /* DatePicker.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		07157053270E03D700DCC9BA = {
+			isa = PBXGroup;
+			children = (
+				0715705E270E03D700DCC9BA /* OutlookCalendarIntegration */,
+				0715705D270E03D700DCC9BA /* Products */,
+				BC9DA95DDBE6F4DF991139E9 /* Pods */,
+				DDF2CA01B8F8CF55446CC8AC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0715705D270E03D700DCC9BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0715705C270E03D700DCC9BA /* OutlookCalendarIntegration.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0715705E270E03D700DCC9BA /* OutlookCalendarIntegration */ = {
+			isa = PBXGroup;
+			children = (
+				074037552710BE5200BF44BD /* OutlookCalendarIntegration.entitlements */,
+				0715705F270E03D700DCC9BA /* AppDelegate.swift */,
+				07157061270E03D700DCC9BA /* SceneDelegate.swift */,
+				07157065270E03D700DCC9BA /* Main.storyboard */,
+				0702D2342721B5D3002AF61B /* Authentication */,
+				0702D2362721B5E4002AF61B /* Login */,
+				0702D2372721B61E002AF61B /* Calendar */,
+				0702D2412721B6A0002AF61B /* AddNewEvents */,
+				0702D2452721B6CC002AF61B /* DatePicker */,
+				07157068270E03DA00DCC9BA /* Assets.xcassets */,
+				0715706A270E03DA00DCC9BA /* LaunchScreen.storyboard */,
+				0715706D270E03DA00DCC9BA /* Info.plist */,
+			);
+			path = OutlookCalendarIntegration;
+			sourceTree = "<group>";
+		};
+		BC9DA95DDBE6F4DF991139E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				519B4193F82DDD100AFF14A8 /* Pods-OutlookCalendarIntegration.debug.xcconfig */,
+				0BED8E8569CC89A2417EF7D2 /* Pods-OutlookCalendarIntegration.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DDF2CA01B8F8CF55446CC8AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8569830B6F5D448989769019 /* Pods_OutlookCalendarIntegration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0715705B270E03D700DCC9BA /* OutlookCalendarIntegration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07157070270E03DA00DCC9BA /* Build configuration list for PBXNativeTarget "OutlookCalendarIntegration" */;
+			buildPhases = (
+				D0B1B1207E03CE5063BA90CF /* [CP] Check Pods Manifest.lock */,
+				07157058270E03D700DCC9BA /* Sources */,
+				07157059270E03D700DCC9BA /* Frameworks */,
+				0715705A270E03D700DCC9BA /* Resources */,
+				DCDBF85A0A7C0175513DA15D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OutlookCalendarIntegration;
+			productName = OutlookCalendarIntegration;
+			productReference = 0715705C270E03D700DCC9BA /* OutlookCalendarIntegration.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07157054270E03D700DCC9BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					0715705B270E03D700DCC9BA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 07157057270E03D700DCC9BA /* Build configuration list for PBXProject "OutlookCalendarIntegration" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07157053270E03D700DCC9BA;
+			productRefGroup = 0715705D270E03D700DCC9BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0715705B270E03D700DCC9BA /* OutlookCalendarIntegration */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0715705A270E03D700DCC9BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0715706C270E03DA00DCC9BA /* LaunchScreen.storyboard in Resources */,
+				07157069270E03DA00DCC9BA /* Assets.xcassets in Resources */,
+				07157067270E03D700DCC9BA /* Main.storyboard in Resources */,
+				074037502710817300BF44BD /* AuthSettings.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0B1B1207E03CE5063BA90CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OutlookCalendarIntegration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCDBF85A0A7C0175513DA15D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OutlookCalendarIntegration/Pods-OutlookCalendarIntegration-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OutlookCalendarIntegration/Pods-OutlookCalendarIntegration-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OutlookCalendarIntegration/Pods-OutlookCalendarIntegration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07157058270E03D700DCC9BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07EBAA7B2711E081008D2D68 /* AddNewEventsViewController.swift in Sources */,
+				07EBAA8127120765008D2D68 /* CalendarModel.swift in Sources */,
+				07EBAA7E2711E6B1008D2D68 /* CalendarViewModel.swift in Sources */,
+				07EBAA782711DDF9008D2D68 /* CalendarEventsTableViewCell.swift in Sources */,
+				074037532710A89700BF44BD /* CalendarViewController.swift in Sources */,
+				07157064270E03D700DCC9BA /* LoginViewController.swift in Sources */,
+				07157060270E03D700DCC9BA /* AppDelegate.swift in Sources */,
+				07157062270E03D700DCC9BA /* SceneDelegate.swift in Sources */,
+				0715707C270E157400DCC9BA /* MSAuthenticationManager.swift in Sources */,
+				07D9820F271C126400719E64 /* DatePicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		07157065270E03D700DCC9BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07157066270E03D700DCC9BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0715706A270E03DA00DCC9BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0715706B270E03DA00DCC9BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0715706E270E03DA00DCC9BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0715706F270E03DA00DCC9BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07157071270E03DA00DCC9BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 519B4193F82DDD100AFF14A8 /* Pods-OutlookCalendarIntegration.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OutlookCalendarIntegration/OutlookCalendarIntegration.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YS64L4A3LW;
+				INFOPLIST_FILE = OutlookCalendarIntegration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sridharan.OutlookCalendarIntegration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07157072270E03DA00DCC9BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BED8E8569CC89A2417EF7D2 /* Pods-OutlookCalendarIntegration.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OutlookCalendarIntegration/OutlookCalendarIntegration.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YS64L4A3LW;
+				INFOPLIST_FILE = OutlookCalendarIntegration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sridharan.OutlookCalendarIntegration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07157057270E03D700DCC9BA /* Build configuration list for PBXProject "OutlookCalendarIntegration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0715706E270E03DA00DCC9BA /* Debug */,
+				0715706F270E03DA00DCC9BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07157070270E03DA00DCC9BA /* Build configuration list for PBXNativeTarget "OutlookCalendarIntegration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07157071270E03DA00DCC9BA /* Debug */,
+				07157072270E03DA00DCC9BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07157054270E03D700DCC9BA /* Project object */;
+}
